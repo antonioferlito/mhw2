@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+}
+
+.choice-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.choice-grid div {
+    /*width: calc(32.5% - 22px);*/
+    box-sizing: border-box;
+    width: 32.5%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #dcdcdc;
+    display: flex;
+    flex-direction: column;
+}
+
+.choice-grid div.selected {
+    background-color: #cfe3ff;
+}
+
+.choice-grid div.notSelected {
+    opacity: 0.6;
+}
+
+.checkbox {
+    height: 20px;
+    width: 20px;
+}
+
+#results {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+#results button {
+    background-color: #cecece;
+    height: 50px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+}
+
+#results p {
+    margin: 18px 0;
+}
+
+#results button:hover {
+    background-color: #e0e0e0;
+}
+
+#results h1 {
+    margin: 0 0;
+}
+
+.question-name {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 700px) {
+    article {
+        width: 95%;
+    }
+
+    header div span {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .choice-grid div {
+        width: 49%;
+    }
+}
