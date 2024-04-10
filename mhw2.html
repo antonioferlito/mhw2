@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>mhw2</title>
+    <link rel="stylesheet" href="mhw2.css">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="mhw2.js" defer="true"></script>
+</head>
+<html>
+
+<body>
+    <header class="nav_box">
+        <div class="nav_bar">
+            <div class="disable_gutters">
+                <div class="top_nav">
+                    <img class="mfp_logo" src="images/mfp_logo.png">
+                    <div class="separator"></div>
+                    <div class="right_box">
+                        <div class="infobar">
+                            <span class="typography_c">Salve, <a class="username">username</a></span>
+                            <div class="notification_box">
+                                <div class="icon_messages"></div>
+                                <div class="icon_request"></div>
+                            </div>
+                            <a><span class="typography_c" id="bor_l">Aiuto</span></a>
+                            <a><span class="typography_c">Impostazioni</span></a>
+                            <a><span class="typography_c">Esci</span></a>
+                            <div class="contact">
+                                <span class="typography_c">Seguici:</span>
+                                <div class="icon_facebook"></div>
+                                <div class="icon_twitter"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="upper_nav">
+                <div class="disable_gutters">
+                    <div class="grid_container">
+                        <div class="grid_item">
+                            <a class="typography_u" id="selected">La mia home</a>
+                        </div>
+                        <div class="grid_item">
+                            <a class="typography_u">Alimenti</a>
+                        </div>
+                        <div class="grid_item">
+                            <a class="typography_u">Esercizi</a>
+                        </div>
+                        <div class="grid_item">
+                            <a class="typography_u">Report</a>
+                        </div>
+                        <div class="grid_item">
+                            <a class="typography_u">App</a>
+                        </div>
+                        <div class="grid_item">
+                            <a class="typography_u">Comunità</a>
+                        </div>
+                        <div class="grid_item">
+                            <a class="typography_u">Blog</a>
+                        </div>
+                        <div class="grid_item">
+                            <a class="typography_u">Premium</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <nav class="lower_nav">
+                <div class="disable_gutters">
+                    <div class="grid_container">
+                        <div class=grid_item>
+                            <a class="l_bold typography_l">Home</a>
+                        </div>
+                        <div class="grid_item">
+                            <a class="typography_l">Obiettivi</a>
+                        </div>
+                        <div class="grid_item">
+                            <a class="typography_l">Check-In</a>
+                        </div>
+                        <div class="grid_item">
+                            <a class="typography_l">Posta</a>
+                        </div>
+                        <div class="grid_item">
+                            <a class="typography_l">Profilo</a>
+                        </div>
+                        <div class="grid_item">
+                            <a class="typography_l">Amici</a>
+                        </div>
+                        <div class="grid_item">
+                            <a class="typography_l">Impostazioni</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <nav class="mobile_nav">
+            <div id="menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div id="x_nav_icon" class="hidden">⨯</div>
+            <div class="logo_blue"></div>
+        </nav>
+        <div class="vertical_nav_bar_no_flex hidden">
+            <div class="vertical_nav_bar">
+                <div class="vertical_item" data-nav="1">
+                    <div class="top_item sub_style" data-title="1">La mia home</div>
+                    <div class="sub_items_no_flex">
+                        <div class="sub_items_container">
+                        <div class="sub_item sub_style" data-index="1">Home</div>
+                        <div class="sub_item sub_style" data-index="2">Obiettivi</div>
+                        <div class="sub_item sub_style" data-index="3">Check-in</div>
+                        <div class="sub_item sub_style" data-index="4">Posta</div>
+                        <div class="sub_item sub_style" data-index="5">Profilo</div>
+                        <div class="sub_item sub_style" data-index="6">Amici</div>
+                        <div class="sub_item sub_style" data-index="7">Impostazioni</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical_item" data-nav="2">
+                    <div class="top_item" data-title="2">Alimenti</div>
+                    <div class="sub_items_no_flex hidden">
+                        <div class="sub_items_container">
+                        <div class="sub_item sub_style" data-index="1">Diario alimentare</div>
+                        <div class="sub_item sub_style" data-index="2">Database</div>
+                        <div class="sub_item sub_style" data-index="3">I miei alimenti</div>
+                        <div class="sub_item sub_style" data-index="4">I miei pasti</div>
+                        <div class="sub_item sub_style" data-index="5">Ricette</div>
+                        <div class="sub_item sub_style" data-index="6">Impostazioni</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical_item" data-nav="3">
+                    <div class="top_item" data-title="3">Esercizi</div>
+                    <div class="sub_items_no_flex hidden">
+                        <div class="sub_items_container">
+                        <div class="sub_item sub_style" data-index="1">Diario degli esercizi</div>
+                        <div class="sub_item sub_style" data-index="2">Database</div>
+                        <div class="sub_item sub_style" data-index="3">I miei esercizi</div>
+                        <div class="sub_item sub_style" data-index="4">Impostazioni</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical_item" data-nav="4">
+                    <div class="top_item" data-title="4">Report</div>
+                    <div class="sub_items_no_flex hidden">
+                        <div class="sub_items_container">
+                        <div class="sub_item sub_style" data-index="1">Grafici</div>
+                        <div class="sub_item sub_style" data-index="2">Esporta dati</div>
+                        <div class="sub_item sub_style" data-index="3">Riepilogo settimanale</div>
+                        <div class="sub_item sub_style" data-index="4">Diario stampabile</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical_item" data-nav="5">
+                    <div class="top_item" data-title="5">App</div>
+                    <div class="sub_items_no_flex hidden">
+                        <div class="sub_items_container">
+                        <div class="sub_item sub_style" data-index="1">Galleria app</div>
+                        <div class="sub_item sub_style" data-index="2">Ios</div>
+                        <div class="sub_item sub_style" data-index="3">Android</div>
+                        <div class="sub_item sub_style" data-index="4">Bmr</div>
+                        <div class="sub_item sub_style" data-index="5">Passi</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical_item" data-nav="6">
+                    <div class="top_item" data-title="6">Comunità</div>
+                </div>
+                <div class="vertical_item" data-nav="7">
+                    <div class="top_item" data-title="7">Blog</div>
+                </div>
+                <div class="vertical_item" data-nav="8">
+                    <div class="top_item" data-title="8">Premium</div>
+                </div>
+                <div class="vertical_item" data-nav="9">
+                    <div class="top_item" data-title="9">Esci</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <article>
+        <div class="container">
+            <section class="upper_ads_wrapper">
+                <div class="ads upper_ads"></div>
+                <div class="ads upper_ads_m"></div>
+            </section>
+            <section class="main">
+                <div class="main_section">
+                    <div class="functional">
+                        <div class="calories_counter">
+                            <div class="top_calories_counter">
+                                <div class="riassunto">
+                                    <h1>Il tuo riassunto giornaliero</h1>
+                                </div>
+                                <div class="streak">
+                                    <div class="n_days">10</div>
+                                    <div class="unit_time">
+                                        Giorno <br> Periodo
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calories_stats">
+                                <div class="left_info">
+                                    <div class="upper_left">
+                                        <div>Nessuna foto <br> disponibile</div>
+                                        <span>Carica foto</span>
+                                    </div>
+                                    <div class="lower_left">
+                                        <div class="weight_info">
+                                            <div class="weight">
+                                                <div class="value">0</div>
+                                                <div class="unit">kg</div>
+                                            </div>
+                                            <div class="scale"></div>
+                                        </div>
+                                        <div class="lose_gain">Persi</div>
+                                    </div>
+                                </div>
+                                <div class="right_info_box">
+                                    <div class="right_info">
+                                        <div class="upper_right">
+                                            Calorie rimanenti
+                                            <span>Modifica</span>
+                                        </div>
+                                        <div class="lower_right">
+                                            <div class="calories_value">2500</div>
+                                            <div class="add_buttons">
+                                                <div class="buttons_box"><a class="add_button"><span>Aggiungi
+                                                            Esercizio</span></a></div>
+                                                <div class="buttons_box"><a class="add_button"><span>Aggiungi
+                                                            Alimento</span></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="lower_counter">
+                                        <div class="counter_numbers">
+                                            <div class="aim">
+                                                <div class="upper_text">2500</div>
+                                                <div class="lower_text">Obiettivo</div>
+                                            </div>
+                                            <div class="food_calories">
+                                                <div class="upper_text">0</div>
+                                                <div class="lower_text">Alimenti</div>
+                                            </div>
+                                            <div class="separator">-</div>
+                                            <div class="exercise_calories">
+                                                <div class="upper_text">0</div>
+                                                <div class="lower_text">Esercizi</div>
+                                            </div>
+                                            <div class="equals">=</div>
+                                            <div class="net_calories">
+                                                <div class="upper_text">0</div>
+                                                <div class="lower_text">Netto</div>
+                                            </div>
+                                        </div>
+                                        <div class="counter_bar">
+                                            <div class="progress_bar">
+                                                <div class="inner_progress_bar"></div>
+                                            </div>
+                                            <div class="counter_tag_no_flex">
+                                                <div class="counter_tag">
+                                                    <div class="triangle_up"></div>
+                                                    <div class="green_tag">0</div>
+                                                </div>
+                                            </div>
+                                            <div class="dotted_v_line"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_feed_container">
+                            <div class="news_feed">
+                                <div class="news_feed_bar">
+                                    <div class="news_feed_text">
+                                        <h1>News feed</h1>
+                                    </div>
+                                </div>
+                                <form class="news_feed_form_box">
+                                    <div class="news_feed_form">
+                                        <div class="news_feed_form_text">
+                                            <textarea placeholder="Cosa pensi?"></textarea>
+                                        </div>
+                                    </div>
+                                    <button>Condividi</button>
+                                </form>
+                            </div>
+                            <div class="streak_feed_container">
+                                <div class="streak_feed_box">
+                                    <div class="streak_feed">
+                                        <div class="feed">
+                                            <div class="top_feed">
+                                                <div class="profile_picture"></div>
+                                                <div class="text_feed">
+                                                    <div class="top">
+                                                        <div class="username_days">
+                                                            <div class="utente">username</div>
+                                                            <span class="days">4 giorni fa</span>
+                                                        </div>
+                                                        <div class="close_feed icon_x"></div>
+                                                    </div>
+                                                    <div class="center">ha effettuato l'accesso per 30 giorni di fila!</div>
+                                                    <div class="bottom">
+                                                        <div class="like_box">
+                                                            <div class="like"></div>
+                                                            <span>Mi piace</span>
+                                                        </div>
+                                                        <div class="point">●</div>
+                                                        <div class="comment_box">
+                                                            <div class="comment"></div>
+                                                            <span>Commento</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bottom_feed">
+                                                <div class="profile_picture"></div>
+                                                <div class="bottom_form">
+                                                    <textarea placeholder="Scrivi qualcosa..."></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="streak_feed_box">
+                                    <div class="streak_feed">
+                                        <div class="feed">
+                                            <div class="top_feed">
+                                                <div class="profile_picture"></div>
+                                                <div class="text_feed">
+                                                    <div class="top">
+                                                        <div class="username_days">
+                                                            <div class="utente">username</div>
+                                                            <span class="days">9 giorni fa</span>
+                                                        </div>
+                                                        <div class="close_feed icon_x"></div>
+                                                    </div>
+                                                    <div class="center">ha effettuato l'accesso per 25 giorni di fila!</div>
+                                                    <div class="bottom">
+                                                        <div class="like_box">
+                                                            <div class="like"></div>
+                                                            <span>Mi piace</span>
+                                                        </div>
+                                                        <div class="point">●</div>
+                                                        <div class="comment_box">
+                                                            <div class="comment"></div>
+                                                            <span>Commento</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bottom_feed">
+                                                <div class="profile_picture"></div>
+                                                <div class="bottom_form">
+                                                    <textarea placeholder="Scrivi qualcosa..."></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="streak_feed_box">
+                                    <div class="streak_feed">
+                                        <div class="feed">
+                                            <div class="top_feed">
+                                                <div class="profile_picture"></div>
+                                                <div class="text_feed">
+                                                    <div class="top">
+                                                        <div class="username_days">
+                                                            <div class="utente">username</div>
+                                                            <span class="days">14</span><span>giorni fa</span>
+                                                        </div>
+                                                        <div class="close_feed icon_x"></div>
+                                                    </div>
+                                                    <div class="center">ha effettuato l'accesso per <span>20</span> giorni di fila!</div>
+                                                    <div class="bottom">
+                                                        <div class="like_box">
+                                                            <div class="like"></div>
+                                                            <span>Mi piace</span>
+                                                        </div>
+                                                        <div class="point">●</div>
+                                                        <div class="comment_box">
+                                                            <div class="comment"></div>
+                                                            <span>Commento</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bottom_feed">
+                                                <div class="profile_picture"></div>
+                                                <div class="bottom_form">
+                                                    <textarea placeholder="Scrivi qualcosa..."></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="load_more">
+                                <button>Carica Altro</button>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="side_part">
+                        <div class="ads side_big_ads"></div>
+                        <div class="forum_insertion">
+                            <div class="top_1">
+                                <div class="top_2">Argomenti recenti del forum</div>
+                                <div class="bottom_2">Visualizza tutto</div>
+                            </div>
+                            <div class="bottom_1">
+                                <div class="topic_list">
+                                    <div class="thread_title">
+                                        <div class="point">•</div>
+                                        <div class="title_text">Miglior modo per perdere peso?</div>
+                                    </div>
+                                    <div class="thread_title">
+                                        <div class="point">•</div>
+                                        <div class="title_text">Perdere grasso corporeo senza compromettere la massa
+                                            muscolare</div>
+                                    </div>
+                                    <div class="thread_title">
+                                        <div class="point">•</div>
+                                        <div class="title_text">Ho perso 10kg in 2 mesi</div>
+                                    </div>
+                                    <div class="thread_title">
+                                        <div class="point">•</div>
+                                        <div class="title_text">Dieta chetogenica funziona?</div>
+                                    </div>
+                                    <div class="thread_title">
+                                        <div class="point">•</div>
+                                        <div class="title_text">Progressi in un anno</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ads side_small_ads"></div>
+                        <div class="blog_insertion">
+                            <div class="top_1">
+                                <div class="top_2">
+                                    <img class="mfp_logo" src="images/mfp_blog.icon.png">
+                                </div>
+                                <div class="bottom_2">Visualizza tutto</div>
+                            </div>
+                            <div class="bottom_1">
+                                <div class="topic_box">
+                                    <div class="title_box">Nutribollocks: What’s the Deal With Apple Cider Vinegar and
+                                        Weight Loss?</div>
+                                    <div class="content_box">If you’re feeling overwhelmed by the conflicting
+                                        nutritional advice out there, you’re not alone. In this Nutribollocks series,
+                                        our registered dietitians and scientific advisory board members take a hard look
+                                        at scientific studies and claims, separating fact from fiction so you don’t have
+                                        to. Over the last few years, apple cider vinegar has blossomed into …</div>
+                                    <div class="more_box">Per saperne di più</div>
+                                </div>
+                                <div class="topic_box">
+                                    <div class="title_box">The Basics of Body Recomposition</div>
+                                    <div class="content_box">Unlock the potential of body recomposition by learning what
+                                        it is, how it works, and tips to help you on your body recomposition journey.
+                                    </div>
+                                    <div class="more_box">Per saperne di più</div>
+                                </div>
+                                <div class="topic_box">
+                                    <div class="title_box">11 Best High-Protein Foods at Costco</div>
+                                    <div class="content_box">Foods rich in protein can help you regulate your blood
+                                        sugar, stay full after eating, improve your muscle mass, and so much more.
+                                        Unfortunately, getting enough protein can be tough when you’re on a tight
+                                        schedule or have to hit a particularly high protein target. The good news is
+                                        that Costco can help.</div>
+                                    <div class="more_box">Per saperne di più</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="lower_ads_wrapper">
+                    <div class="ads lower_ads"></div>
+                </div>
+            </section>
+        </div>
+    </article>
+    <footer>
+        <div class="listed_links">
+            <div><a>Conta calorie</a></div>
+            <div><a>Blog</a></div>
+            <div><a>Condizioni</a></div>
+            <div><a>Privacy</a></div>
+            <div><a>Contattaci</a></div>
+            <div><a>API</a></div>
+            <div><a>Offerte di lavoro</a></div>
+            <div><a>Feedback</a></div>
+            <div><a>Codice di comportamento</a></div>
+            <div><a>Preferenze sui cookie</a></div>
+            <div><a>Scelte annunci</a></div>
+            <div><a>Non vendere le mie informazioni personali</a></div>
+        </div>
+        <div class="language_selector">
+            <select>
+                <option>Italiano</option>
+            </select>
+        </div>
+        <div class="credits">© 2024 MyFitnessPal, Inc.</div>
+    </footer>
+    </div>
+</body>
+
+</html>
